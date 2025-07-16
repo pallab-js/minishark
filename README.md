@@ -1,5 +1,7 @@
 MiniShark
+
 MiniShark is a lightweight command-line network packet analyzer written in Python. It captures and analyzes network packets in real-time, supporting protocols like TCP, UDP, ICMP, HTTP, HTTPS, DNS, and IPv6. Features include protocol filtering, IP filtering, JSON export, and a visual protocol distribution chart.
+
 Features
 
 Real-time packet capture with color-coded console output
@@ -19,14 +21,17 @@ Dependencies: psutil (install via pip install psutil)
 
 Installation
 
-Clone the repository:git clone https://github.com/pallab-js/minishark.git
+Clone the repository:
+git clone https://github.com/pallab-js/minishark.git
 cd minishark
 
 
-Install dependencies:pip install -r requirements.txt
+Install dependencies:
+pip install -r requirements.txt
 
 
-Run as root (e.g., using sudo on Linux):sudo python minishark.py
+Run as root (e.g., using sudo on Linux):
+sudo python minishark.py
 
 
 
@@ -49,6 +54,11 @@ Example
 Capture 100 TCP packets and export to packets.json:
 sudo python minishark.py -c 100 -f tcp -o packets.json
 
+Testing
+Run unit tests to verify functionality:
+python -m unittest test_minishark.py
+
+Tests cover packet parsing, filtering, and export functionality. Note: Some tests mock socket operations as raw socket access requires root privileges.
 Development
 
 Contributing: Fork the repo, create a feature branch, and submit a pull request.
@@ -58,7 +68,8 @@ License: MIT License (see LICENSE file).
 Building the Project
 
 Ensure dependencies are installed (pip install -r requirements.txt).
-Run tests (if added) or execute minishark.py with desired options.
+Run tests (python -m unittest test_minishark.py).
+Execute minishark.py with desired options.
 
 Contact
 
