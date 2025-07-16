@@ -1,0 +1,30 @@
+# Python-specific ignores
+*.pyc
+__pycache__/
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+*.egg-info/
+dist/
+build/
+*.log
+*.egg
+.pypirc
+
+# Project-specific ignores
+minishark.log
+*.json
+
+# IDE-specific ignores
+.idea/
+*.iml
+.vscode/
+
+# OS-specific ignores
+.DS_Store
+Thumbs.db
